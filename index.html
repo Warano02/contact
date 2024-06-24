@@ -1,0 +1,55 @@
+<!--Coding by Jean Calvain Doumba -- Futur Web developper -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form signup">
+            <header>Inscription</header>
+            <form action="#" enctype="multipart/form-data" >
+                <div class="error-msg"></div>
+                <div class="name-details">
+                    <div class="field input">
+                        <label >Nom</label>
+                        <input type="text" name="nom" placeholder="Nom" required autocomplete="off">
+                    </div>
+                    <div class="field input">
+                        <label >Prenom</label>
+                        <input type="text"name="prenom" placeholder="Prenom" required>
+                    </div>
+                </div>    
+                 <div class="field input">
+                    <label >Email</label>
+                    <input type="email" name="mail" placeholder="exemple@clv.com" required>
+                </div>
+                <div class="field input">
+                    <label >Mot de passe </label>
+                    <input type="password" name="pass1" placeholder="Mot de passe">
+                    <i class='bx bx-show' ></i>
+                </div>
+                <div class="field input">
+                    <label >Confirmer le mot de passe</label>
+                    <input type="password" name="pass2" placeholder="Confirmer le mot de passe" required>
+                </div>
+                <div class="field image">
+                    <label >Photo de profil</label>
+                    <input type="file" name="profil" required>
+                </div>
+                <div class="field bouton">
+                    <input type="submit" value="Soumettre">
+                </div>
+            </form>
+            <div class="link">Deja inscrit ? <a href="signin.php">Se connecter</a></div>
+        </section>
+    </div>
+    <script src="management-js/app.js"></script>
+    <script src="management-js/signup.js"></script>
+</body>
+</html>
